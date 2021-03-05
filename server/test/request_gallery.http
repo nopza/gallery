@@ -1,0 +1,25 @@
+### Get Gallery
+GET http://localhost:8081/api/v1/gallery/all HTTP/1.1
+
+### Get Gallery By username
+GET http://localhost:8081/api/v1/gallery/admin HTTP/1.1
+x-access-token:eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmZjI3ODE1Y2ZiNzFmMjdiMDU1NzAwOCIsInVzZXJuYW1lIjoiYWRtaW4iLCJpYXQiOjE2MDk5MDc5NTQsImV4cCI6MTAwMTYwOTkwNzk1NCwiYXVkIjoiaHR0cDovL2ljb25leHQuY28udGgiLCJpc3MiOiJpY29uZXh0Iiwic3ViIjoic2lwcGF2aXQifQ.K2L0c7i7KL6lmc4uy9aVxM01kh5HEJZ7sDy52uycc123UbcrfWuQvyerRBCpoYa54_Rgl21Cdwucrn3yfXnhq3hsFEtSnFnTz6_bN4g36iJkdR2zIxcz_Av__JQs8ZW3Ejuy_yuOfBBIr8JJv_H-fc01Hex-lDQQGzqO4c8FPag
+
+
+### Get Gallery by ID
+GET http://localhost:8081/api/v1/gallery/id/1 HTTP/1.1
+
+### Get Gallery by Type
+GET http://localhost:8081/api/v1/gallery/type/animal HTTP/1.1
+
+### Get Gallery by Keyword
+GET http://localhost:8081/api/v1//gallery/name/Nopza HTTP/1.1
+
+### Get Gallery by Keyword
+POST http://localhost:8081/api/v1//gallery/search HTTP/1.1
+Content-Type: application/json
+
+{
+    "type" : "people",
+    "name" : "Nopza"
+}
